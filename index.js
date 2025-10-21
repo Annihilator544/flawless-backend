@@ -20,7 +20,7 @@ console.log('VEEQO_STORE:', VEEQO_STORE, 'VEEQO_ACCESS_TOKEN:', VEEQO_ACCESS_TOK
 let inventoryCache = {
   data: null,
   timestamp: null,
-  ttl: 100 * 60 * 1000, // 100 minutes cache
+  ttl: 240 * 60 * 1000, // 240 minutes cache 
   isRevalidating: false
 }
 
