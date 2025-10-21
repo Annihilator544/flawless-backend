@@ -1,6 +1,7 @@
 require('dotenv').config();
 
 const express = require('express');
+const cors = require('cors');
 const { fetchInventoryData, processInventoryData } = require('./inventory');
 const app = express()
 const port = 5000
