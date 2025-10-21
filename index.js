@@ -5,6 +5,11 @@ const { fetchInventoryData, processInventoryData } = require('./inventory');
 const app = express()
 const port = 5000
 
+app.use(cors({
+  origin: ['http://localhost:3000', 'https://v0-flawless-vape-dashboard-five.vercel.app/'],
+  credentials: true
+}));
+
 // Configuration
 const VEEQO_STORE = process.env.VEEQO_STORE
 const VEEQO_ACCESS_TOKEN = process.env.VEEQO_ACCESS_TOKEN
